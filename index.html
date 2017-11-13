@@ -8,23 +8,25 @@
 <body>
 	
 
-<iframe src="https://jianjishiyiqie.netlify.com" id="fkmgllq"  frameborder="0" scrolling="no" allowtransparency="true"  width="100%" style=" height: auto; border: 0px none;"  onload="getifrtitle()"></iframe>
+< iframe rc="https://jianjishiyiqie.netlify.com" id="iframepage" frameborder="0" scrolling="no"  allowtransparency="true" marginheight="0" marginwidth="0" onLoad="iFrameHeight()">< /iframe>
 
-<script type="text/javascript">
 
-document.getElementById('fkmgllq').style.height =  window.innerHeight - 18   + 'px';
+< script type="text/javascript" language="javascript">   
 
-document.getElementById('fkmgllq').style.width = window.screen.width + 'px';
+function iFrameHeight() {  
 
-window.onresize = function(){
+	var ifm= document.getElementByIdx_xx_x("iframepage");  
 
-document.getElementById('fkmgllq').style.height =  window.innerHeight - 18   + 'px';
+	var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+	if(ifm != null && subWeb != null) {  
 
-document.getElementById('fkmgllq').style.width = window.screen.width  + 'px';
+	ifm.height = subWeb.body.scrollHeight;  
 
-}
+	ifm.width = subWeb.body.scrollWidth;}
 
-</script>
+  }  
+
+< /script>
 
 
 
